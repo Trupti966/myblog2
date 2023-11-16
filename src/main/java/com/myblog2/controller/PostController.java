@@ -6,6 +6,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+// controller layer
 @RestController
 @RequestMapping("/api/posts")
 public class PostController {
@@ -19,7 +20,7 @@ public class PostController {
 
 
     // http://localhost:8080/api/posts
-    // Save the Data into the database by using @PostMapping
+    // Saving the Data into the database by using @PostMapping
     @PostMapping
     public ResponseEntity<PostDto> createPost(
             @RequestBody PostDto postDto

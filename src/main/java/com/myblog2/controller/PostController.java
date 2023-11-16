@@ -29,6 +29,9 @@ public class PostController {
         return new ResponseEntity<>(dto, HttpStatus.CREATED);
     }
 
+
+    // http://localhost:8080/api/posts/9
+    // Delete the Data into the database by using @DeleteMapping
     @DeleteMapping("/{id}")
     public  ResponseEntity<String> deleteById(
             @PathVariable long id
